@@ -11,3 +11,4 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - I updated and uploaded a technical report overview and formatting to github.
 
 **Helpful References**
+- https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
