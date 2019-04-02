@@ -13,6 +13,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - Starting technical report section on SSL certificates and Certificate Authorities.
 - 4/2/2019
   - Working on HTML website that I will give a certificate to show it is secure. 
+  - file:///Users/nicholasmason/Desktop/UNR/CS445-NicholasMason-Project.html
 
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
