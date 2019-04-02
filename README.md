@@ -11,7 +11,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - I updated and uploaded a technical report overview and formatting to github.
 - 3/28/2019
   - Starting technical report section on SSL certificates and Certificate Authorities.
-- 4/2/2018
+- 4/2/2019
   - Working on HTML website that I will give a certificate to show it is secure. 
 
 **Helpful References**
