@@ -14,6 +14,8 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 - 4/2/2019
   - Working on HTML website that I will give a certificate to show it is secure. 
   - file:///Users/nicholasmason/Desktop/UNR/CS445-NicholasMason-Project.html
+- 4/3/2019
+  - Looking into openSSL certificate creation, including creating both a public and private key for my program. The use of the openssl/x509.h and the openssl/rsa.h header files will allow me to do this. The openssl/x509.h file will let me generate a private key dynamically, while the openssl/rsa.h will allow me to create a RSA key.
 
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
