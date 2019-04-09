@@ -1,5 +1,5 @@
 # Internet Security
-My project for CS445 - Internet Security, will be focused on embedding self-created certificates. I will attempt to provide functional implementation and a detailed report on how it works, explaining key concepts.
+My project for CS445 - Internet Security, will be focused on embedding self-created certificates. In addition, I will attempt to add these self-signed certificates to the trusted CAS list. I will attempt to provide functional implementation and a detailed report on how it works, explaining key concepts.
 - By: Nicholas Mason
 - Due: April 28th, 2019
 
@@ -37,6 +37,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     - Step 5: Configuring Apache to use the files created in this exercise.
 - 4/9/2019
   - Working on my technical report. Updated technical report uploaded to GitHub.
+  - Looking into how to take self-signed certificate and add it to the trusted CAS list.
 
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
