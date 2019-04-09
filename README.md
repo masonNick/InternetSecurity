@@ -1,6 +1,7 @@
 # Internet Security
 My project for CS445 - Internet Security, will be focused on embedding self-created certificates to the trusted Cas list. I will attempt to provide functional implementation and a detailed report on how it works, explaining key concepts.
 - By: Nicholas Mason
+- Due: April 28th, 2019
 
 **To do list**
 - (1) Code Implementation 
