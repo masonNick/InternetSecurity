@@ -45,3 +45,4 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 - https://stackoverflow.com/questions/256405/programmatically-create-x509-certificate-using-openssl
 - https://www.rosehosting.com/blog/how-to-generate-a-self-signed-ssl-certificate-on-linux/
 - https://www.namecheap.com/support/knowledgebase/article.aspx/798/67/what-is-an-rsa-key-used-for
+- https://unix.stackexchange.com/questions/90450/adding-a-self-signed-certificate-to-the-trusted-list
