@@ -24,8 +24,8 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - Finally, I will attempt to create the certificate itself by using the X509 struct to show a x509 certificate in the memory. The basis for this struct is located within the openssl/x509.h header file. 
   - Using, X509_new, creates a dynamically allocated struct, used for the certificate creation.
   ### Code example for the certificate: 
-    - X509 * certificate;              //Creating the certificate pointer of type X509.
-    - certificate = X509_new();        //Dynamically creating the certificate.
+      - X509 * certificate;              //Creating the certificate pointer of type X509.
+      - certificate = X509_new();        //Dynamically creating the certificate.
 - 4/8/2019
   - Self creating a SSL certificate creator is beneficial locally on your computer for encryption, as well as publically on the Internet through the use of various web browsers, including Google Chrome, Internet Explorer, and Apple's Safari.
   - These private use SSL certificates allows a given user protection to various attacks from hackers, including at least a "Man in the Middle Attack."
