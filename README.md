@@ -35,6 +35,8 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     - Step 3: Creating a “Certificate Signing Request”, also known as a CSR file.
     - Step 4: Creating the “.crt” File. This is also called a certificate file.
     - Step 5: Configuring Apache to use the files created in this exercise.
+- 4/9/2019
+  - Working on my technical report. Updated technical report uploaded to GitHub.
 
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
