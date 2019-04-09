@@ -25,6 +25,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     - certificate = X509_new();        //Dynamically creating the certificate.
 - 4/8/2019
   - Self creating a SSL certificate creator is beneficial locally on your computer for encryption, as well as publically on the Internet through the use of various web browsers, including Google Chrome, Internet Explorer, and Apple's Safari.
+  - These private use SSL certificates allows a given user protection to various attacks from hackers, including at least a "Man in the Middle Attack."
 
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
