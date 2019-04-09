@@ -31,3 +31,4 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 - file:///Users/nicholasmason/Desktop/UNR/CS445-NicholasMason-Project.html
 - https://www.openssl.org/docs/manmaster/man3/X509_new.html
 - https://stackoverflow.com/questions/256405/programmatically-create-x509-certificate-using-openssl
+- https://www.rosehosting.com/blog/how-to-generate-a-self-signed-ssl-certificate-on-linux/
