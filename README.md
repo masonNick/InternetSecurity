@@ -20,8 +20,10 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 - 4/3/2019
   #### Looking into openSSL certificate creation, including creating both a public and private key for my program. 
       - The use of the openssl/x509.h and the openssl/rsa.h header files will allow me to do this. 
-      - The openssl/x509.h file will let me generate a private key dynamically, while the openssl/rsa.h will allow me to create a RSA key. 
-      - Finally, I will attempt to create the certificate itself by using the X509 struct to show a x509 certificate in the memory. The basis for this struct is located within the openssl/x509.h header file. 
+      - The openssl/x509.h file will let me generate a private key dynamically. 
+      - The openssl/rsa.h will allow me to create a RSA key. 
+      - Finally, I will attempt to create the certificate itself by using the X509 struct to show a x509 certificate in the memory. 
+        - The basis for this struct is located within the openssl/x509.h header file. 
       - Using, X509_new, creates a dynamically allocated struct, used for the certificate creation.
   #### Code example for the certificate: 
       - X509 * certificate;              //Creating the certificate pointer of type X509.
