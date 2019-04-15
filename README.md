@@ -44,10 +44,18 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   
 - 4/15/2019
   - Working on code implementation 
-  #### Step 1: Create a RSA Keypair.
+  #### Step 1: Create SSL Certificate
     NOTE: I will do this using the openssl tool downloaded in the terminal in Linux. 
     ##### Type the following to generate a RSA private key, with length 2048 bits long modulus.
-      ~$ openssl genrsa -des3 -passout pass:x -out keypair.key 2048
+      ~$ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+    ##### The creator of the certificate will be asked a series of questions: 
+      ountry Name (2 letter code) [AU]:US
+      State or Province Name (full name) [Some-State]:Nevada
+      Locality Name (eg, city) []:Sparks
+      Organization Name (eg, company) [Internet Widgits Pty Ltd]:Nick Mason
+      Organizational Unit Name (eg, section) []: CS445
+      Common Name (e.g. server FQDN or YOUR name) []:IP Address
+      Email Address []:myEmailAddress@domainName
   #### Step 1.5: Configure Apache Webserver
       ~$ sudo apt update
       ~$ sudo apt install apache2 
