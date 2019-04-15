@@ -33,6 +33,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - These private use SSL certificates allows a given user protection to various attacks from hackers, including at least a "Man in the Middle Attack."
   #### There will be five steps that I will attempt to follow: 
       - Step 1: Create a RSA Keypair.
+        - Step 1.5: Configure Apache Webserver
       - Step 2: Extract the Private Key
       - Step 3: Creating a “Certificate Signing Request”, also known as a CSR file.
       - Step 4: Creating the “.crt” File. This is also called a certificate file.
@@ -47,6 +48,16 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     NOTE: I will do this using the openssl tool downloaded in the terminal in Linux. 
     #### Type the following to generate a RSA private key, with length 2048 bits long modulus.
       ~$ openssl genrsa -des3 -passout pass:x -out keypair.key 2048
+  #### Step 1.5: Configure Apache Webserver
+      ~$ sudo apt update
+      ~$ sudo apt install apache2 
+    - This will install apache onto your Linux machine. 
+    #### You should be able to start your apache webserver by typing: 
+      ~$ sudo systemctl status apache2
+    - Now, using your server IP address, you can go see that your apache webserver is indeed up and running. You can change the contents displayed on the apache webserver by altering the index.html file associated with your webserver. 
+    #### Type: 
+      http:// <IP address of server> 
+     
   #### Step 2: Extract the Private Key
      
 **Helpful References**
