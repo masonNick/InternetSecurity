@@ -49,7 +49,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     ##### Type the following to generate a RSA private key, with length 2048 bits long modulus.
       ~$ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
     ##### The creator of the certificate will be asked a series of questions: 
-      ountry Name (2 letter code) [AU]:US
+      Country Name (2 letter code) [AU]:US
       State or Province Name (full name) [Some-State]:Nevada
       Locality Name (eg, city) []:Sparks
       Organization Name (eg, company) [Internet Widgits Pty Ltd]:Nick Mason
