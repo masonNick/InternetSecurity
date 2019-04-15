@@ -46,16 +46,16 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - Working on code implementation 
   #### Step 1: Create a RSA Keypair.
     NOTE: I will do this using the openssl tool downloaded in the terminal in Linux. 
-    #### Type the following to generate a RSA private key, with length 2048 bits long modulus.
+    ##### Type the following to generate a RSA private key, with length 2048 bits long modulus.
       ~$ openssl genrsa -des3 -passout pass:x -out keypair.key 2048
   #### Step 1.5: Configure Apache Webserver
       ~$ sudo apt update
       ~$ sudo apt install apache2 
     - This will install apache onto your Linux machine. 
-    #### You should be able to start your apache webserver by typing: 
+    ##### You should be able to start your apache webserver by typing: 
       ~$ sudo systemctl status apache2
     - Now, using your server IP address, you can go see that your apache webserver is indeed up and running. You can change the contents displayed on the apache webserver by altering the index.html file associated with your webserver. 
-    #### Type: 
+    ##### Type: 
       http:// <IP address of server> 
      
   #### Step 2: Extract the Private Key
