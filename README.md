@@ -42,7 +42,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - Looking into how to take self-signed certificate and add it to the trusted CAS list.
   
 - 4/15/2019
-  #### Working on code implementation 
+  - Working on code implementation 
   #### Step 1: Create a RSA Keypair.
     NOTE: I will do this using the openssl tool downloaded in the terminal in Linux. 
     #### Type the following to generate a RSA private key, with length 2048 bits long modulus.
