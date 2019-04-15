@@ -33,7 +33,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - These private use SSL certificates allows a given user protection to various attacks from hackers, including at least a "Man in the Middle Attack."
   #### There will be five steps that I will attempt to follow: 
       - Step 1: Create a RSA Keypair.
-      - Step 2: Extract the Private Key into an “httpd” Folder
+      - Step 2: Extract the Private Key
       - Step 3: Creating a “Certificate Signing Request”, also known as a CSR file.
       - Step 4: Creating the “.crt” File. This is also called a certificate file.
       - Step 5: Configuring Apache to use the files created in this exercise.
@@ -47,6 +47,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     NOTE: I will do this using the openssl tool downloaded in the terminal in Linux. 
     #### Type the following to generate a RSA private key, with length 2048 bits long modulus.
       ~$ openssl genrsa -des3 -passout pass:x -out keypair.key 2048
+  #### Step 2: Extract the Private Key
      
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
