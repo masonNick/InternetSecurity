@@ -67,7 +67,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       http:// <IP address of server> 
      
   #### Step 2: Configure Apache to Use SSL Certificate
-    ##### (1) I will build a configuration snippet in order to create secure the default SSL settings.
+     ##### (1) I will build a configuration snippet in order to create secure the default SSL settings.
        ~$ sudo nano /etc/apache2/conf-available/ssl-params.conf
     ##### (2) I will alter the included SSL Apache Virtual Host file in order to point to my newly created SSL certificates from Step 1.
     ##### (3) I will alter the unencrypted Virtual Host file to automatically redirect requests to the encrypted Virtual Host.
