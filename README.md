@@ -46,9 +46,8 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       - Step 1: Create a RSA Keypair.
         NOTE: I will do this using the openssl tool downloaded in the terminal in Linux. 
         (1) Type the following to generate a RSA private key, with length 2048 bits long modulus.
-          - openssl genrsa -des3 -passout pass:x -out keypair.key 2048
-          // I will include an image of this process in my technical report, where the viewer can see the exact code I used and what the terminal responds with.
-
+           ~$ openssl genrsa -des3 -passout pass:x -out keypair.key 2048
+              // I will include an image of this process in my technical report.
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
 - https://www.openssl.org/docs/manmaster/man3/X509_new.html
