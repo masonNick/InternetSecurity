@@ -32,12 +32,12 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - Self creating a SSL certificate creator is beneficial locally on your computer for encryption, as well as publically on the Internet through the use of various web browsers, including Google Chrome, Internet Explorer, and Apple's Safari.
   - These private use SSL certificates allows a given user protection to various attacks from hackers, including at least a "Man in the Middle Attack."
   #### There will be five steps that I will attempt to follow: 
-      - Step 1: Create a RSA Keypair.
+      - Step 1: Create SSL Certificate
         - Step 1.5: Configure Apache Webserver
-      - Step 2: Extract the Private Key
-      - Step 3: Creating a “Certificate Signing Request”, also known as a CSR file.
-      - Step 4: Creating the “.crt” File. This is also called a certificate file.
-      - Step 5: Configuring Apache to use the files created in this exercise.
+      - Step 2: Configure Apache to Use SSL Certificate
+      - Step 3: Adjust the firewall and Chnaging Features in Apache
+      - Step 4: Test the Newly Created Encryption
+      - Step 5: Changing to Permanent Redirect
 - 4/9/2019
   - Working on my technical report. Updated technical report uploaded to GitHub.
   - Looking into how to take self-signed certificate and add it to the trusted CAS list.
@@ -66,7 +66,17 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     ##### Type: 
       http:// <IP address of server> 
      
-  #### Step 2: Extract the Private Key
+  #### Step 2: Configure Apache to Use SSL Certificate
+    ##### (1) I will build a configuration snippet in order to create secure the default SSL settings.
+       ~$ sudo nano /etc/apache2/conf-available/ssl-params.conf
+    ##### (2) I will alter the included SSL Apache Virtual Host file in order to point to my newly created SSL certificates from Step 1.
+    ##### (3) I will alter the unencrypted Virtual Host file to automatically redirect requests to the encrypted Virtual Host.
+
+  #### Step 3: Adjust the firewall and Chnaging Features in Apache
+  
+  #### Step 4: Test the Newly Created Encryption
+  
+  #### Step 5: Changing to Permanent Redirect
      
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
