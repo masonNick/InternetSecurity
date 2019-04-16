@@ -72,6 +72,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     ##### (2) I will alter the included SSL Apache Virtual Host file in order to point to my newly created SSL certificates from Step 1.
     ##### (3) I will alter the unencrypted Virtual Host file to automatically redirect requests to the encrypted Virtual Host.
 
+- 4/16/2019
   #### Step 3: Adjust the firewall and Chnaging Features in Apache
   
   #### Step 4: Test the Newly Created Encryption
