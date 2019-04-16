@@ -145,6 +145,9 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     - By deleting the 'Apache' application and replacing it with 'Apache Full', I am able to let in https traffic to my Apache Webserver I am testing for my project. 
   
   #### Step 4: Test the Newly Created Encryption
+  ##### I am able to check if the Apache Webserver is registered under https by typing the following into a web browser. For this example, I am using Firefox, which is built into my Ubuntu Linux 18.04 machine through Vitrual Box.
+      https://<IP Address of your machine you are working on for this project> 
+    - Note: There will still be a message that pops up on your web browser claiming that your server is not secure, forcing the user to click a button, acknowledging that they know that the website is not "private". This will be addressed in the second part of this project, where I attempt to add my self-signed certificate for this Apache Webserver to the Trusted CAS list for Firefox. 
   
   #### Step 5: Changing to Permanent Redirect
      
