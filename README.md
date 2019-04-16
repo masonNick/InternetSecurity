@@ -70,6 +70,35 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
      ##### (1) I will build a configuration snippet in order to create secure the default SSL settings.
        ~$ sudo nano /etc/apache2/conf-available/ssl-params.conf
     ##### (2) I will alter the included SSL Apache Virtual Host file in order to point to my newly created SSL certificates from Step 1.
+      Note: Use this code to duplicate the original default-ssl.conf configuration file before changing it with the newly created certificate information.
+      
+      ~$ sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
+      
+      Origianl Virtual Host file for the default looks as follows: 
+      <IfModule mod_ssl.c>
+          <VirtualHost _default_:443>
+                ServerAdmin webmaster@localhost
+
+                DocumentRoot /var/www/html
+
+                ErrorLog ${APACHE_LOG_DIR}/error.log
+                CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+                SSLEngine on
+
+                SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
+                SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+
+                <FilesMatch "\.(cgi|shtml|phtml|php)$">
+                                SSLOptions +StdEnvVars
+                </FilesMatch>
+                <Directory /usr/lib/cgi-bin>
+                                SSLOptions +StdEnvVars
+                </Directory>
+
+          </VirtualHost>
+      </IfModule>
+      
     ##### (3) I will alter the unencrypted Virtual Host file to automatically redirect requests to the encrypted Virtual Host.
 
 - 4/16/2019
