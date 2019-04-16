@@ -35,7 +35,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       - Step 1: Create SSL Certificate
         - Step 1.5: Configure Apache Webserver
       - Step 2: Configure Apache to Use SSL Certificate
-      - Step 3: Adjust the firewall and Chnaging Features in Apache
+      - Step 3: Adjust the firewall and Changing Features in Apache
       - Step 4: Test the Newly Created Encryption
       - Step 5: Changing to Permanent Redirect
 - 4/9/2019
@@ -136,7 +136,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     </VirtualHost>
 
 - 4/16/2019
-  #### Step 3: Adjust the firewall and Chnaging Features in Apache
+  #### Step 3: Adjust the firewall and Changing Features in Apache
     ##### In this section, the user wants to make sure that the firewall will allow for Apache features. Utilizing the ufw command, I can see the available applications that are available in the firewall for Apache Webserver. 
       ~$ sudo ufw app list  //Allows the user to see which applications are available with Apache. 
     ##### I want to make sure that https traffic, as configured in Step 2, part 3, is allowed in these appications. By simply seeing Apache as an available application in your status screen, http is allowed through the firewall. However, https is only allowed if you change the Apache application to Apache Full. You can do this by: 
