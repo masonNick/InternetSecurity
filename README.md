@@ -126,6 +126,14 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       
     ##### (3) I will alter the unencrypted Virtual Host file to automatically redirect requests to the encrypted Virtual Host.
       ~$ sudo nano /etc/apache2/sites-available/000-default.conf
+    ##### In order to make the Apache Webserver more secure, I will alter the traffic of the http to https. This will redirect the traffic from the site to the SSL version of the server. 
+      <VirtualHost *:80>
+        . . .
+
+        Redirect "/" "https://<Your Apache IP Address for which you are using for your project/"
+
+        . . .
+    </VirtualHost>
 
 - 4/16/2019
   #### Step 3: Adjust the firewall and Chnaging Features in Apache
