@@ -74,7 +74,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       
       ~$ sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
       
-      Origianl Virtual Host file for the default looks as follows: 
+    ##### Origianl Virtual Host file for the default looks as follows: 
       <IfModule mod_ssl.c>
           <VirtualHost _default_:443>
                 ServerAdmin webmaster@localhost
@@ -88,6 +88,31 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 
                 SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
                 SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+
+                <FilesMatch "\.(cgi|shtml|phtml|php)$">
+                                SSLOptions +StdEnvVars
+                </FilesMatch>
+                <Directory /usr/lib/cgi-bin>
+                                SSLOptions +StdEnvVars
+                </Directory>
+
+          </VirtualHost>
+      </IfModule>
+    ##### Modify the Virtual Host File to include the new ServerAdmin name and include ServerName. In addition, on the SSLCertificateFile and SSLCertificateKeyFile, alter it to include the path with the newly created crt file and key file.
+      <IfModule mod_ssl.c>
+          <VirtualHost _default_:443>
+                ServerAdmin your_email@example.com
+                **ServerName server_domain_or_IP**
+
+                DocumentRoot /var/www/html
+
+                ErrorLog ${APACHE_LOG_DIR}/error.log
+                CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+                SSLEngine on
+
+                **SSLCertificateFile      /etc/ssl/certs/apache-selfsigned.crt**
+                **SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key**
 
                 <FilesMatch "\.(cgi|shtml|phtml|php)$">
                                 SSLOptions +StdEnvVars
