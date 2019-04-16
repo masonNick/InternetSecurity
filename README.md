@@ -101,8 +101,8 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     ##### Modify the Virtual Host File to include the new ServerAdmin name and include ServerName. In addition, on the SSLCertificateFile and SSLCertificateKeyFile, alter it to include the path with the newly created crt file and key file.
       <IfModule mod_ssl.c>
           <VirtualHost _default_:443>
-                ServerAdmin your_email@example.com
-                **ServerName server_domain_or_IP**
+                ServerAdmin myEmailAddress@domainName                             //Change email
+                ServerName IP Address of webserver [Apache Webserver IP address]  //Change IP for Apache
 
                 DocumentRoot /var/www/html
 
@@ -111,8 +111,8 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 
                 SSLEngine on
 
-                **SSLCertificateFile      /etc/ssl/certs/apache-selfsigned.crt**
-                **SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key**
+                SSLCertificateFile      /etc/ssl/certs/apache-selfsigned.crt       //Change to .crt file
+                SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key       //Change to .key file
 
                 <FilesMatch "\.(cgi|shtml|phtml|php)$">
                                 SSLOptions +StdEnvVars
