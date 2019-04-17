@@ -170,7 +170,9 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 - The goal of this section is to take our self-signed certificate for our Apache Webserver, created above, and import it into the Trusted CAS list for trusted certificates in Firefox on my Virtual Machine running Ubuntu 18.04.
 - My goals for this section include: 
   - (1) Add my self-signed certificate to the Trusted CAS list in Firefox.
-  - (2) Show the green lock icon next to my webserver: https://<Your Apache IP Address for which you are using for your project>
+  - (2) Show the green lock icon next to my webserver. 
+    ##### This will look as follows: 
+      https://<Your Apache IP Address for which you are using for your project>
      
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
