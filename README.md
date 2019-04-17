@@ -167,6 +167,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       
       
 **Adding my Self-Signed Certificate to the Trusted CAS List**
+- The goal of this section is to take our self-signed certificate for our Apache Webserver, created above, and import it into the Trusted CAS list for trusted certificates in Firefox on my Virtual Machine running Ubuntu 18.04.
      
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
