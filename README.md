@@ -174,6 +174,11 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 ##### To start: 
     Open Firefox, and go to the settings menu. 
     Navigate your way to the Advanced settings, where the Certificates menu physically resides. 
+##### Next, you will need to click on the import tab in the Certificates menu of your Firefox settings. 
+    Select the root certificate for your self-signed certificate that was created earlier in this project. 
+    I will select all trust levels for the certificate that I have created because I know that it is secure and created by myself. 
+    You can view your certificate in the list of certificates your web browser trusts now. 
+##### Finally, you will be able to see the lock icon next to your Apache Webserver's URL.
      
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
