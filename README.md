@@ -150,6 +150,23 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
     - Note: There will still be a message that pops up on your web browser claiming that your server is not secure, forcing the user to click a button, acknowledging that they know that the website is not "private". This will be addressed in the second part of this project, where I attempt to add my self-signed certificate for this Apache Webserver to the Trusted CAS list for Firefox. 
   
   #### Step 5: Changing to Permanent Redirect
+  ##### If you wish to permanently change the redirect as shown in Step 3, part 3, you can go back to the file and change the following:
+  ##### First:
+      sudo nano /etc/apache2/sites-available/000-default.conf
+  ##### You can then alter the file itself, which would look like this:
+      <VirtualHost *:80>
+        . . .
+
+        Redirect permanent "/" "https://<Your Apache IP Address for which you are using for your project/"
+        // The only thing that has changed in this file is adding the key word 'permanent' to the redirect line. 
+
+        . . .
+      </VirtualHost>
+  ##### Finally, you will need to restart you Apache Webserver by typing this command into your terminal:
+      ~$ sudo systemctl restart apache2
+      
+      
+**Adding my Self-Signed Certificate to the Trusted CAS List
      
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
