@@ -171,8 +171,9 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 - My goals for this section include: 
   - (1) Add my self-signed certificate to the Trusted CAS list in Firefox.
   - (2) Show the green lock icon next to my webserver. 
-    ##### This will look as follows: 
-      http:// <IP address of server> 
+##### To start: 
+    Open Firefox, and go to the settings menu. 
+    Navigate your way to the Advanced settings, where the Certificates menu physically resides. 
      
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
