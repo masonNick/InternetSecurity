@@ -166,7 +166,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       ~$ sudo systemctl restart apache2
       
       
-**Adding my Self-Signed Certificate to the Trusted CAS List
+**Adding my Self-Signed Certificate to the Trusted CAS List**
      
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
