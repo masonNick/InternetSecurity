@@ -1,7 +1,7 @@
 # Internet Security
-My project for CS445 - Internet Security, will be focused on embedding self-created certificates. In addition, I will attempt to add these self-signed certificates to the trusted CAS list. I will attempt to provide functional implementation and a detailed report on how it works, explaining key concepts.
+My project for CS445 - Internet Security, will be focused on embedding self-created certificates. In addition, I will attempt to add these self-signed certificates to Firefox. I will attempt to provide functional implementation and a detailed report on how it works, explaining key concepts.
 - By: Nicholas Mason
-- Due: April 28th, 2019
+- Due: April 29th, 2019
 
 **To do list**
 - (1) Code Implementation 
@@ -165,10 +165,10 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       ~$ sudo systemctl restart apache2
       
       
-**Adding my Self-Signed Certificate to the Trusted CAS List**
-- The goal of this section is to take our self-signed certificate for our Apache Webserver, created above, and import it into the Trusted CAS list for trusted certificates in Firefox on my Virtual Machine running Ubuntu 18.04.
+**Adding my Self-Signed Certificate to Firefox**
+- The goal of this section is to take our self-signed certificate for our Apache Webserver, created above, and import it into Firefox on my Virtual Machine running Ubuntu 18.04.
 - My goals for this section include: 
-  - (1) Add my self-signed certificate to the Trusted CAS list in Firefox.
+  - (1) Add my self-signed certificate to the Firefox.
   - (2) Show the green lock icon next to my webserver. 
 ##### To start: 
     Open Firefox, and go to the settings menu. 
