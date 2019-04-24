@@ -73,7 +73,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       
       ~$ sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
       
-    ##### Origianl Virtual Host file for the default looks as follows: 
+    ##### Original Virtual Host file for the default looks as follows: 
       <IfModule mod_ssl.c>
           <VirtualHost _default_:443>
                 ServerAdmin webmaster@localhost
