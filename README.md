@@ -5,6 +5,8 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 
 **To do list**
 - (1) Code Implementation 
+  - Part 1: Creating Self-Signed Certificate
+  - Part 2: Adding my Self-Signed Certificate to Firefox
 - (2) Research
 - (3) Documentation and Technical Report
 
@@ -32,6 +34,8 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - These private use SSL certificates allows a given user protection to various attacks from hackers, including at least a "Man in the Middle Attack."
   
 ### Main Method Used for My Project.
+__________________________________________________________________________________________________________________________________________
+### Part 1: Creating Self-Signed Certificate
 __________________________________________________________________________________________________________________________________________
   #### There will be five steps that I will attempt to follow: 
       - Step 1: Create SSL Certificate
@@ -166,8 +170,10 @@ ________________________________________________________________________________
       </VirtualHost>
   ##### Finally, you will need to restart you Apache Webserver by typing this command into your terminal:
       ~$ sudo systemctl restart apache2
+   __________________________________________________________________________________________________________________________________________
       
-      
+### Part 2: Adding my Self-Signed Certificate to Firefox
+__________________________________________________________________________________________________________________________________________
 **Adding my Self-Signed Certificate to Firefox**
 - The goal of this section is to take our self-signed certificate for our Apache Webserver, created above, and import it into Firefox on my Virtual Machine running Ubuntu 18.04.
 - My goals for this section include: 
