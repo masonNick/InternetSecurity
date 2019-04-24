@@ -31,7 +31,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
   - Self creating a SSL certificate creator is beneficial locally on your computer for encryption, as well as publically on the Internet through the use of various web browsers, including Google Chrome, Internet Explorer, and Apple's Safari.
   - These private use SSL certificates allows a given user protection to various attacks from hackers, including at least a "Man in the Middle Attack."
   
-### Main Area for my project.
+### Main Method Used for My Project.
 __________________________________________________________________________________________________________________________________________
   #### There will be five steps that I will attempt to follow: 
       - Step 1: Create SSL Certificate
@@ -181,6 +181,7 @@ ________________________________________________________________________________
     I will select all trust levels for the certificate that I have created because I know that it is secure and created by myself. 
     You can view your certificate in the list of certificates your web browser trusts now. 
 ##### Finally, you will be able to see the lock icon next to your Apache Webserver's URL.
+__________________________________________________________________________________________________________________________________________
      
 **Helpful References**
 - https://www.netburner.com/learn/creating-a-self-signed-certificate-for-secure-iot-applications/
