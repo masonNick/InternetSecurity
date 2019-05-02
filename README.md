@@ -1,7 +1,7 @@
 # Internet Security
 My project for CS445 - Internet Security, will be focused on embedding self-created certificates. In addition, I will attempt to add these self-signed certificates to Firefox. I will attempt to provide functional implementation and a detailed report on how it works, explaining key concepts.
 - By: Nicholas Mason
-- Due: April 29th, 2019
+- Due: May 10th, 2019
 
 **To do list**
 - (1) Code Implementation 
