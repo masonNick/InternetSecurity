@@ -137,7 +137,7 @@ ________________________________________________________________________________
       <VirtualHost *:80>
         . . .
 
-        Redirect "/" "https://<Your Apache IP Address for which you are using for your project>/"
+        Redirect permanent "/" "https://<Your Apache IP Address for which you are using for your project>/"
 
         . . .
     </VirtualHost>
@@ -150,25 +150,23 @@ ________________________________________________________________________________
       ~$ sudo ufw allow 'Apache Full'
       ~$ sudo ufw delete allow 'Apache'
     - By deleting the 'Apache' application and replacing it with 'Apache Full', I am able to let in https traffic to my Apache Webserver I am testing for my project. 
+    ##### Finally, we will need to adjust some features in the Apache Webserver in order to use my newly changed and created config files.
+    ##### First, type: 
+      ~$ sudo a2enmod ssl
+      ~$ sudo a2enmod headers
+    - The first line will enable the apache module. 
+    - The second line enables the mod_headers, which will be used in the newly configured files.
+    
+    ##### Second, we will enable the SSL virtual-host by typing:
+      ~$ sudo a2ensite default-ssl
+    ##### Fianlly, we will enable Apache to use our paramsCS445.conf file that we created earlier in the project. Type: 
+      ~$ sudo a2enconf paramsCS445
   
   #### Step 4: Test the Newly Created Encryption
   ##### I am able to check if the Apache Webserver is registered under https by typing the following into a web browser. For this example, I am using Firefox, which is built into my Ubuntu Linux 18.04 machine through Vitrual Box.
       https://<IP Address of your machine you are working on for this project> 
     - Note: There will still be a message that pops up on your web browser claiming that your server is not secure, forcing the user to click a button, acknowledging that they know that the website is not "private". This will be addressed in the second part of this project, where I attempt to add my self-signed certificate for this Apache Webserver to the Trusted CAS list for Firefox. 
   
-  #### Step 5: Changing to Permanent Redirect
-  ##### If you wish to permanently change the redirect as shown in Step 3, part 3, you can go back to the file and change the following:
-  ##### First:
-      sudo nano /etc/apache2/sites-available/000-default.conf
-  ##### You can then alter the file itself, which would look like this:
-      <VirtualHost *:80>
-        . . .
-
-        Redirect permanent "/" "https://<Your Apache IP Address for which you are using for your project>/"
-        // The only thing that has changed in this file is adding the key word 'permanent' to the redirect line. 
-
-        . . .
-      </VirtualHost>
   ##### Finally, you will need to restart you Apache Webserver by typing this command into your terminal:
       ~$ sudo systemctl restart apache2
 __________________________________________________________________________________________________________________________________________
