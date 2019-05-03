@@ -74,7 +74,8 @@ ________________________________________________________________________________
      
   #### Step 2: Configure Apache to Use SSL Certificate
      ##### (1) I will build a configuration snippet in order to create secure the default SSL settings.
-       ~$ sudo nano /etc/apache2/conf-available/ssl-params.conf
+       ~$ sudo nano /etc/apache2/conf-available/paramsCS445.conf
+     ##### NOTE: I used paramsCS445 as the name of my default SSL settings configuration file that I created. I used standardized parameters used for popular software.
     ##### (2) I will alter the included SSL Apache Virtual Host file in order to point to my newly created SSL certificates from Step 1.
       Note: Use this code to duplicate the original default-ssl.conf configuration file before changing it with the newly created certificate information.
       
