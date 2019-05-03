@@ -81,7 +81,7 @@ ________________________________________________________________________________
       
       ~$ sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
       
-    ##### Original Virtual Host file for the default looks as follows: 
+    ##### Original Virtual Host file for the default looks as follows: (I deleted comments for better reading).
       <IfModule mod_ssl.c>
           <VirtualHost _default_:443>
                 ServerAdmin webmaster@localhost
