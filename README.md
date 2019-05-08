@@ -12,7 +12,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 
 **Day to Day Progress**
 - 3/26/2019 
-  - Looking into how to write a program to create a self assigned certificate to secure a given website. Research on what it takes to complete this task, and looking into sudo commands.
+  - Looking into how to write a program to create a self-signed certificate to secure a given website. Research on what it takes to complete this task, and looking into sudo commands.
   - I updated and uploaded a technical report overview and formatting to github.
 - 3/28/2019
   - Starting technical report section on SSL certificates and Certificate Authorities.
@@ -30,7 +30,7 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
       - X509 * certificate;              //Creating the certificate pointer of type X509.
       - certificate = X509_new();        //Dynamically creating the certificate.
 - 4/8/2019
-  - Self creating a SSL certificate creator is beneficial locally on your computer for encryption, as well as publically on the Internet through the use of various web browsers, including Google Chrome, Internet Explorer, and Apple's Safari.
+  - Self creating a SSL certificate creator is beneficial locally on your computer for encryption, as well as publically securing data on the Internet through the use of various web browsers, including Google Chrome, Internet Explorer, and Apple's Safari.
   - These private use SSL certificates allows a given user protection to various attacks from hackers, including at least a "Man in the Middle Attack."
   
 ### Main Method Used for My Project.
@@ -146,7 +146,7 @@ ________________________________________________________________________________
   #### Step 3: Adjust the firewall and Changing Features in Apache
     ##### In this section, the user wants to make sure that the firewall will allow for Apache features. Utilizing the ufw command, I can see the available applications that are available in the firewall for Apache Webserver. 
       ~$ sudo ufw app list  //Allows the user to see which applications are available with Apache. 
-    ##### I want to make sure that https traffic, as configured in Step 2, part 3, is allowed in these appications. By simply seeing Apache as an available application in your status screen, http is allowed through the firewall. However, https is only allowed if you change the Apache application to Apache Full. You can do this by: 
+    ##### I want to make sure that https traffic, as configured in Step 2, part 3, is allowed in these applications. By simply seeing Apache as an available application in your status screen, http is allowed through the firewall. However, https is only allowed if you change the Apache application to Apache Full. You can do this by: 
       ~$ sudo ufw allow 'Apache Full'
       ~$ sudo ufw delete allow 'Apache'
     - By deleting the 'Apache' application and replacing it with 'Apache Full', I am able to let in https traffic to my Apache Webserver I am testing for my project. 
@@ -163,7 +163,7 @@ ________________________________________________________________________________
       ~$ sudo a2enconf paramsCS445
   
   #### Step 4: Test the Newly Created Encryption
-  ##### I am able to check if the Apache Webserver is registered under https by typing the following into a web browser. For this example, I am using Firefox, which is built into my Ubuntu Linux 18.04 machine through Vitrual Box.
+  ##### I am able to check if the Apache Webserver is registered under https by typing the following into a web browser. For this example, I am using Firefox, which is built into my Ubuntu Linux 18.04 machine through Virtual Box.
       https://<IP Address of your machine you are working on for this project> 
     - Note: There will still be a message that pops up on your web browser claiming that your server is not secure, forcing the user to click a button, acknowledging that they know that the website is not "private". This will be addressed in the second part of this project, where I attempt to add my self-signed certificate for this Apache Webserver to the Trusted CAS list for Firefox. 
   
