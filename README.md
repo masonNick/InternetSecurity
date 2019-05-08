@@ -188,7 +188,7 @@ ________________________________________________________________________________
 - The goal of this section is to take our self-signed certificate for our Apache Webserver, created above, and import it into Firefox on my Virtual Machine running Ubuntu 18.04.
 - My goals for this section include: 
   - (1) Add my self-signed certificate to the Firefox.
-  - (2) Show the green lock icon next to my webserver. 
+  - (2) Achieve encryption for my apache webserver. 
 ##### To start: 
     Open Firefox, and go to the settings menu. 
     Navigate your way to the Advanced settings, where the Certificates menu physically resides. 
@@ -196,7 +196,7 @@ ________________________________________________________________________________
     Select the root certificate for your self-signed certificate that was created earlier in this project. 
     I will select all trust levels for the certificate that I have created because I know that it is secure and created by myself. 
     You can view your certificate in the list of certificates your web browser trusts now. 
-##### Finally, you will be able to see the lock icon next to your Apache Webserver's URL.
+##### Finally, you will be able to see have encrypted data for your Apache Webserver.
 __________________________________________________________________________________________________________________________________________
      
 **Helpful References**
