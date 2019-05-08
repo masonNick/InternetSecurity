@@ -3,6 +3,16 @@ My project for CS445 - Internet Security, will be focused on embedding self-crea
 - By: Nicholas Mason
 - Due: May 10th, 2019
 
+### About my Project
+__________________________________________________________________________________________________________________________________________
+### Components to my Project:
+  ##### (1) Githib README.md
+    This is used to show the code segments used to accomplish my goal.
+  ##### (2) Technical Report
+    The technical report is added as a PDF and Word Document in my InternetSecurity Github Page. 
+  ##### NOTE: I show my daily progress of what I have done. It includes the dates and what I researched. 
+__________________________________________________________________________________________________________________________________________
+
 **To do list**
 - (1) Code Implementation 
   - Part 1: Creating Self-Signed Certificate
